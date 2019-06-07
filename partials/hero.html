@@ -48,7 +48,7 @@
                     <input type="email" name="email" ng-model="mailchimp.EMAIL" placeholder="Email address" id="mce-EMAIL" required>
                   </div>
                   <!--end of email text field-->
-
+                    
                   <!--whitepaper button-->
                   <div class="col-md-4 whitepaper-form-container">
                     <input ng-disabled="MailchimpSubscriptionForm.$invalid" ng-click="addSubscription(mailchimp)" value="WHITE PAPER" id="mc-embedded-subscribe"
@@ -56,7 +56,7 @@
                   </div>
                 </div>
                 <!-- end of whitepaper button-->
-
+                <br>
                 <div ng-show="mailchimp.result === 'error'" ng-cloak>
                   <span ng-bind-html="mailchimp.errorMessage"></span>
                 </div>
